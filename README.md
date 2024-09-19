@@ -17,7 +17,7 @@ pip install yfinance pandas numpy matplotlib seaborn scipy statsmodels scikit-le
 ```
 ## Usage
 
-The python file utilises the yfinance API to source historical stock price data for Disney (DIS) over a 10 year period. This can be altered to suit any company with public trading data by altering the first argument of yfinance's '.download' function:
+The python file utilises the yfinance API to source historical stock price data for Disney (DIS), along with data for other financial instruments like the VIX, gold, and crude oil over a 10 year period. This can be altered to suit any company with public trading data by altering the first argument of yfinance's '.download' function:
 
 ```python
 # Download Disney (DIS) OHLC data from 2000 to 2024
@@ -27,3 +27,10 @@ disney_df = pd.DataFrame(disney_data)
 # Display the first few rows of the DataFrame
 print(disney_df.head())
 ```
+The project calculates various technical indicators for the stock data, such as:
+
+• Simple and Exponential Moving Averages (SMA, EMA)
+• Relative Strength Index (RSI)
+• Moving Average Convergence Divergence (MACD)
+• Bollinger Bands
+• External factors like VIX, Gold prices, and Crude Oil prices are also standardized and incorporated as features.
