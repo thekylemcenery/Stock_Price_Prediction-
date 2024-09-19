@@ -29,7 +29,7 @@ print(disney_df.head())
 ```
 The project calculates various technical indicators for the stock data, such as:
 
-• Simple and Exponential Moving Averages (SMA, EMA) \n
+• Simple and Exponential Moving Averages (SMA, EMA) <br>
 • Relative Strength Index (RSI)
 • Moving Average Convergence Divergence (MACD)
 • Bollinger Bands
