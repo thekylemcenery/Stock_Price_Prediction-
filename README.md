@@ -136,24 +136,25 @@ Subplots to compare the results for all three regression models:
 Suggestions for Improvement:
 
 Feature Engineering: <br>
-Consider adding lag features (e.g., price movements from the past 5 or 10 days). These can help models capture trends better.<br>
-Interaction Terms: Feature interaction (e.g., product of RSI and MACD) could capture non-linear relationships between the indicators.<br>
-Add seasonality features, such as month or weekday, to see if there are any recurring patterns over time (e.g., earnings season impact on stock prices).
+• Consider adding lag features (e.g., price movements from the past 5 or 10 days). These can help models capture trends better.<br>
+Interaction Terms: <br>
+• Feature interaction (e.g., product of RSI and MACD) could capture non-linear relationships between the indicators.<br>
+• Add seasonality features, such as month or weekday, to see if there are any recurring patterns over time (e.g., earnings season impact on stock prices).
 Hyperparameter Tuning: <br>
-In Lasso and Ridge regressions, it's crucial to tune the alpha parameter using techniques like cross-validation. You might want to use GridSearchCV from sklearn to find the best alpha values. <br>
+• In Lasso and Ridge regressions, it's crucial to tune the alpha parameter using techniques like cross-validation. You might want to use GridSearchCV from sklearn to find the best alpha values. <br>
 Model Comparison: <br>
-Apart from linear models, try using non-linear models like Random Forest or XGBoost. These models are often better suited to capturing complex relationships in stock market data.<br>
-You could also explore ensemble methods, where multiple models' predictions are averaged or combined for improved performance. <br>
+• Apart from linear models, try using non-linear models like Random Forest or XGBoost. These models are often better suited to capturing complex relationships in stock market data.<br>
+• You could also explore ensemble methods, where multiple models' predictions are averaged or combined for improved performance. <br>
 More Metrics for Stock Prediction: <br>
-Incorporating financial ratios (e.g., Price/Earnings (P/E) ratio, Debt/Equity ratio) can enhance prediction accuracy.<br>
-You could explore Sentiment Analysis by scraping news headlines or social media to gauge public sentiment about Disney and other key factors affecting the stock. <br>
+• Incorporating financial ratios (e.g., Price/Earnings (P/E) ratio, Debt/Equity ratio) can enhance prediction accuracy.<br>
+• You could explore Sentiment Analysis by scraping news headlines or social media to gauge public sentiment about Disney and other key factors affecting the stock. <br>
 More Time Series Specific Models: <br>
-Stock market data is inherently time-dependent, so using time-series models like ARIMA (AutoRegressive Integrated Moving Average), Prophet, or LSTM (Long Short-Term Memory Networks) could be valuable for better handling the temporal aspects of the data. <br>
+• Stock market data is inherently time-dependent, so using time-series models like ARIMA (AutoRegressive Integrated Moving Average), Prophet, or LSTM (Long Short-Term Memory Networks) could be valuable for better handling the temporal aspects of the data. <br>
 Backtesting: <br>
-Consider running a backtest where you simulate trading strategies based on your predictions and check if your models lead to profitable trades. <br>
-Backtesting against real historical data can show how your models perform in real-world scenarios.
+• Consider running a backtest where you simulate trading strategies based on your predictions and check if your models lead to profitable trades. <br>
+• Backtesting against real historical data can show how your models perform in real-world scenarios.
 Explainability:<br>
-Use techniques like SHAP or LIME to explain the model’s predictions, especially with Lasso and Ridge. This will help identify which features (indicators) are most important for the prediction. <br>
+• Use techniques like SHAP or LIME to explain the model’s predictions, especially with Lasso and Ridge. This will help identify which features (indicators) are most important for the prediction. <br>
 
 
 
