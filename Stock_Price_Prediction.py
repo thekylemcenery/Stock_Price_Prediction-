@@ -241,7 +241,7 @@ print(f'F1 Score: {f1}')
 x_train_lasso, x_test_lasso, y_train_lasso, y_test_lasso = train_test_split(x, y, test_size=0.2, random_state=42)
 
 # Initialize Lasso model with a chosen alpha (regularization strength)
-lasso_model = Lasso(alpha=0.1)  # You might need to tune alpha using cross-validation
+lasso_model = Lasso(alpha=0.1)  # Might need to tune alpha using cross-validation
 # Fit the model
 lasso_model.fit(x_train_lasso, y_train_lasso)
 # Make predictions
@@ -256,7 +256,7 @@ print("Lasso Coefficients:", lasso_model.coef_)
 x_train_ridge, x_test_ridge, y_train_ridge, y_test_ridge = train_test_split(x, y, test_size=0.2, random_state=42)
 
 # Initialize Ridge model with a chosen alpha (regularization strength)
-ridge_model = Ridge(alpha=1.0)  # You might need to tune alpha using cross-validation
+ridge_model = Ridge(alpha=1.0)  # Might need to tune alpha using cross-validation
 # Fit the model
 ridge_model.fit(x_train_ridge, y_train_ridge)
 # Make predictions
